@@ -319,7 +319,7 @@ class ocpy(Daemon, pyinotify.ProcessEvent):
 
 
 if __name__ == "__main__":
-	daemon = ocpy('/tmp/ocpy.pid', '/dev/null', '/tmp/ocpy.log', '/tmp/ocpy.log')
+	daemon = ocpy('/var/run/ocpy.pid', '/dev/null', '/var/log/ocpy.log', '/var/log/ocpy.log')
 	if len(sys.argv) == 2:
 		if 'start' == sys.argv[1]:
 			daemon.start()
