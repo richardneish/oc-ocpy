@@ -262,7 +262,7 @@ class ocpy(Daemon, pyinotify.ProcessEvent):
 		# create default configuration object
 		self.configDefault = ConfigParser.ConfigParser()
 		self.configDefault.add_section('csync')
-		self.configDefault.set('csync', 'exe',         '/usr/bin/csync')
+		self.configDefault.set('csync', 'exe',         '/usr/bin/ocsync')
 		self.configDefault.set('csync', 'local_path',  os.environ['HOME'] + '/ownCloud')
 		self.configDefault.set('csync', 'protocol',    'owncloud')
 		self.configDefault.set('csync', 'user',        '')
